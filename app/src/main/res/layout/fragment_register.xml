@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.login.RegisterFragment"
+    android:background="@color/Fondo">
+    <TextView
+        android:id="@+id/textViewTitleDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/appName"
+        android:textColor="@color/Cabecera"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintStart_toEndOf="@+id/textViewTitleDetail"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitleDetail"
+        app:srcCompat="@drawable/ic_real_state" />
+    <TextView
+        android:id="@+id/textViewTitleRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleDetail" />
+
+    <EditText
+        android:id="@+id/editTextEmailRegister"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColor="#fa870c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleRegister" />
+
+    <EditText
+        android:id="@+id/editTextPasswordOneRegister"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColor="#fa870c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailRegister" />
+
+    <EditText
+        android:id="@+id/editTextPasswordTwoRegister"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_width="260dp"
+
+        android:ems="10"
+        android:hint="@string/repeatPassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordOneRegister"
+        />
+
+    <Button
+        android:id="@+id/buttonRegisterOnRegisterFragment"
+
+        app:layout_constraintEnd_toEndOf="@+id/editTextPasswordTwoRegister"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordTwoRegister"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonround"
+        android:drawableRight="@drawable/login"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button_cancel"
+
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/buttonroundoscuro"
+        android:drawableRight="@drawable/registro"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/cancel"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegisterOnRegisterFragment"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegisterOnRegisterFragment"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegisterOnRegisterFragment" />
+</android.support.constraint.ConstraintLayout>

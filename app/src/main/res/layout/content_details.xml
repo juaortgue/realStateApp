@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.property.DetailsActivity"
+    tools:showIn="@layout/activity_details">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/contactofondo">
+
+        <ImageButton
+            android:id="@+id/deletePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+
+            android:background="@color/Cabecera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewRightArrow"
+            app:srcCompat="@drawable/ic_delete_black_24dp" />
+        <ImageView
+            android:id="@+id/imageViewPicture"
+
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewLeftArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewRightArrow"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPicture"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageViewRightArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageViewLeftArrow"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPicture"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <TextView
+            android:id="@+id/textViewTitleDetail"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="#f1fdf2"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:text="TextView"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLeftArrow" />
+
+        <TextView
+            android:id="@+id/textViewCategoryDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            android:drawableStart="@drawable/marcaanuncio"
+            android:drawablePadding="10dip"/>
+
+        <TextView
+            android:id="@+id/textViewPriceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/discount"
+            android:drawablePadding="10dip"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/textViewCategoryDetail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCategoryDetail" />
+
+        <TextView
+            android:id="@+id/textViewRoomsDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/bed"
+            android:drawablePadding="10dip"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textViewSizeDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/dimensions"
+            android:drawablePadding="10dip"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/textViewRoomsDetail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRoomsDetail" />
+
+        <TextView
+            android:id="@+id/textViewDescriptionDetail"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#f1fdf2"
+
+
+            android:fontFamily="sans-serif"
+
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:text="TextView"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddressDetail" />
+
+        <TextView
+            android:paddingLeft="15dp"
+
+
+            android:textAlignment="textStart"
+
+            android:id="@+id/textViewAddressDetail"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#f1fdf2"
+            android:fontFamily="sans-serif"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitleDetail" />
+
+        <TextView
+            android:id="@+id/textViewCityZipcodeProvinceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/address"
+            android:drawablePadding="10dip"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/textViewPriceDetail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPriceDetail" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapViewDetails"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:apiKey="AIzaSyDZ2Nj9veSteHFuontDUaZcqXhRVtI1UV8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCityZipcodeProvinceDetail" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Descripción propiedad"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textViewDescriptionDetail"
+            app:layout_constraintHorizontal_bias="0.539"
+            app:layout_constraintStart_toStartOf="@+id/textViewDescriptionDetail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionDetail" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.createproperty.CreatePropertyActivity"
+    android:background="@color/Fondo">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/createProperty"
+            android:textColor="@color/Cabecera"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/title_edit"
+
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#f1fdf2"
+            android:ems="10"
+
+            android:fontFamily="sans-serif"
+            android:hint="@string/title"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+
+
+            android:textAlignment="textStart"
+
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSize"
+            app:layout_constraintVertical_bias="0.141" />
+
+        <Button
+            android:id="@+id/btProbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Choose City"
+            android:background="@drawable/buttonroundoscuro"
+            android:drawableRight="@drawable/registro"
+            app:layout_constraintEnd_toEndOf="@+id/address_edit"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/address_edit"
+            app:layout_constraintTop_toBottomOf="@+id/address_edit"
+
+            android:drawablePadding="10dip"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="0dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/description_edit"
+            app:layout_constraintStart_toStartOf="@+id/description_edit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533"
+            tools:ignore="MissingConstraints">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/region_dialog"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvRegion"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/province_dialog"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvProvincia"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/city_dialog"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvMunicipio"
+                    android:textSize="20dp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <EditText
+            android:id="@+id/price_edit"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:hint="@string/price_prop"
+            android:inputType="numberSigned"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintStart_toStartOf="@+id/description_edit" />
+
+        <EditText
+            android:id="@+id/size_edit"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="@string/size_prop"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/price_edit"
+            app:layout_constraintTop_toTopOf="@+id/price_edit" />
+
+        <EditText
+            android:id="@+id/zipcode_edit"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="@string/zipcode_prop"
+            android:inputType="number"
+            app:layout_constraintStart_toEndOf="@+id/size_edit"
+            app:layout_constraintTop_toTopOf="@+id/size_edit" />
+
+        <EditText
+            android:id="@+id/address_edit"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/address_prop"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+            app:layout_constraintHorizontal_bias="0.576"
+            app:layout_constraintStart_toStartOf="@+id/tableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btProbar" />
+
+        <Button
+            android:id="@+id/add_property"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/ok"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:background="@drawable/buttonround"
+            android:drawableRight="@drawable/login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_category"
+            app:layout_constraintVertical_bias="0.48000002" />
+
+        <EditText
+            android:id="@+id/description_edit"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#f1fdf2"
+
+
+            android:ems="10"
+
+            android:fontFamily="sans-serif"
+            android:hint="@string/description"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/size_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_edit"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/Cabecera"
+            android:clickable="true"
+            android:visibility="invisible"
+            app:backgroundTint="#00EEEEEE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+        <EditText
+            android:id="@+id/editTextRooms"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="@string/rooms"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toEndOf="@+id/zipcode_edit"
+            app:layout_constraintTop_toTopOf="@+id/zipcode_edit" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
